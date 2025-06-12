@@ -3,112 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protege Pool Services</title>
+    <title>Protege Pool Services - Your Premier Pool Experts in Arizona</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter for a modern, clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        /* Custom styles to override or add to Tailwind defaults if needed */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Inter', sans-serif; /* Apply Inter font globally */
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #0056b3;
-        }
-        .location {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        .location:last-child {
-            border-bottom: none;
-        }
-        .contact-info {
-            font-weight: bold;
-        }
-        .rating {
-            color: #ff9800;
-        }
-        .reviews {
-            margin-top: 15px;
-            font-style: italic;
-        }
-        .review-item {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
+        /* Custom scroll-behavior for smooth scrolling on navigation links */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Protege Pool Services</h1>
-        <p>Your trusted partner for professional pool cleaning and maintenance in Arizona.</p>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Header with Navigation (Sticky) -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg py-4 sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 flex justify-center space-x-6 sm:space-x-8">
+            <a href="#hero" class="text-white hover:text-yellow-300 font-semibold text-lg transition duration-300 ease-in-out px-3 py-1 rounded-md">Home</a>
+            <a href="#about-us" class="text-white hover:text-yellow-300 font-semibold text-lg transition duration-300 ease-in-out px-3 py-1 rounded-md">About Us</a>
+            <a href="#services" class="text-white hover:text-yellow-300 font-semibold text-lg transition duration-300 ease-in-out px-3 py-1 rounded-md">Services</a>
+            <a href="#locations" class="text-white hover:text-yellow-300 font-semibold text-lg transition duration-300 ease-in-out px-3 py-1 rounded-md">Locations</a>
+            <a href="#faq" class="text-white hover:text-yellow-300 font-semibold text-lg transition duration-300 ease-in-out px-3 py-1 rounded-md">FAQ</a>
+            <a href="#contact" class="text-white hover:text-yellow-300 font-semibold text-lg transition duration-300 ease-in-out px-3 py-1 rounded-md">Contact</a>
+        </nav>
+    </header>
 
-        <div class="location">
-            <h2>Peoria Location</h2>
-            <p class="contact-info">
-                <strong>Address:</strong> 6827 W Cherry Hills Dr, Peoria, AZ 85345
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-br from-blue-500 to-blue-700 text-white py-16 px-4 text-center shadow-inner relative overflow-hidden">
+        <div class="max-w-5xl mx-auto z-10 relative">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Crystal Clear Pools, Effortless Living.
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-10 opacity-90">
+                Experience the Protege Pool Services difference. We handle the hard work so you can relax and enjoy your perfect Arizona pool, all year round.
             </p>
-            <p class="contact-info">
-                <strong>Phone:</strong> +1 623-202-9391
+            <a href="tel:+16232029391" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-xl px-10 py-4 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+                Get Your Free Quote Today!
+            </a>
+        </div>
+        <!-- Hero Image -->
+        <img src="https://placehold.co/1200x600/1a4a8c/ffffff?text=Pool+Service+Image" alt="Sparkling clean swimming pool" class="absolute inset-0 w-full h-full object-cover opacity-30 z-0">
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+
+        <!-- About Us Section -->
+        <section id="about-us" class="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-16">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-8 border-b-2 border-blue-200 pb-4">About Protege Pool Services</h2>
+            <p class="text-lg leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">
+                At Protege Pool Services, we believe your pool should be a source of relaxation, not a chore. With years of dedicated experience serving homeowners across Peoria, Glendale, and surrounding Arizona communities, we're committed to delivering unparalleled pool care. Our team of certified technicians is passionate about maintaining crystal-clear, healthy pools year-round. We pride ourselves on reliability, expertise, and a personalized approach to every pool, ensuring your complete satisfaction. From routine maintenance to complex repairs, trust Protege Pool Services to keep your aquatic oasis in perfect condition.
             </p>
-            <p><strong>Hours:</strong> Open 24 hours, every day</p>
-            <p><strong>Rating:</strong> <span class="rating">4.5 stars</span></p>
-            <p><strong>Services:</strong> Weekly pool cleaning, repairs, and installations.</p>
-            <p><strong>Accessibility:</strong> Wheelchair accessible parking and entrance.</p>
-            <div class="reviews">
-                <h3>Customer Reviews:</h3>
-                <div class="review-item">
-                    "Protege pool service goes above and beyond great service, first time using them I can finally say I finally found great reliable service. Thank you.🤩"
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-16">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-8 border-b-2 border-blue-200 pb-4">Our Comprehensive Pool Services</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                We offer a full spectrum of professional pool care solutions tailored to meet your unique needs and ensure year-round enjoyment.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Weekly Maintenance -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66A8 8 0 0 1 12 22a8 8 0 0 1-5.66-13.65L12 2.69z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Weekly Pool Cleaning & Maintenance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Keep your pool sparkling clean and perfectly balanced with our regular, comprehensive service.
+                    </p>
+                    <ul class="text-gray-700 text-left w-full list-none p-0 space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Skimming leaves and debris</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Brushing pool walls, tiles, and steps</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Vacuuming pool bottom (as needed)</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Testing and balancing water chemistry</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Backwashing filters & emptying baskets</li>
+                    </ul>
                 </div>
-                <div class="review-item">
-                    "Awesome experience from start to finish. The team was super friendly, knew their stuff, and the pool turned out better than I imagined. Highly recommend!"
+
+                <!-- Service Card 2: Equipment Repair & Installation -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z"/>
+                            <path d="M5.5 8.5l.5.5"/>
+                            <path d="M13.5 16.5l.5.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Pool Equipment Repair & Installation</h3>
+                    <p class="text-gray-600 mb-4">
+                        From minor fixes to major overhauls, our experts handle all types of pool equipment issues.
+                    </p>
+                    <ul class="text-gray-700 text-left w-full list-none p-0 space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Pump repair and replacement</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Filter cleaning, repair, and installation</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Heater repair and installation</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Salt system troubleshooting & service</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Automation system setup and repair</li>
+                    </ul>
                 </div>
-                <div class="review-item">
-                    "reliable, professional, and always keeps our pool in top shape, will definitely being using their services again in the future!"
+
+                <!-- Service Card 3: Seasonal Services -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Seasonal Pool Services</h3>
+                    <p class="text-gray-600 mb-4">
+                        Prepare your pool for every season with our specialized services, ensuring optimal performance.
+                    </p>
+                    <ul class="text-gray-700 text-left w-full list-none p-0 space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Green pool clean-up and restoration</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Acid washing and draining</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Algae treatment and prevention</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Tile cleaning and calcium removal</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Winterization & summer opening prep</li>
+                    </ul>
                 </div>
             </div>
-            <p><a href="https://maps.google.com/?cid=842193448367683889" target="_blank">View on Google Maps</a></p>
-        </div>
+        </section>
 
-        <div class="location">
-            <h2>Glendale Location</h2>
-            <p class="contact-info">
-                <strong>Address:</strong> 15415 N 61st Ave, Glendale, AZ 85306
+        <!-- Locations Section -->
+        <section id="locations" class="mb-16">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-8 border-b-2 border-blue-200 pb-4">Our Locations</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                Serving the Greater Phoenix Area from our two convenient locations, ready to provide top-tier pool care.
             </p>
-            <p class="contact-info">
-                <strong>Phone:</strong> +1 623-202-9391
-            </p>
-            <p><strong>Hours:</strong> Open 24 hours Monday - Saturday, Closed Sunday</p>
-            <p><strong>Rating:</strong> <span class="rating">3.7 stars</span></p>
-            <p><strong>Accessibility:</strong> Wheelchair accessible parking and entrance.</p>
-            <div class="reviews">
-                <h3>Customer Reviews:</h3>
-                <div class="review-item">
-                    "This company is the only one that kept my pool in great shape all year"
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Peoria Location Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Peoria Location</h3>
+                    <p class="text-gray-700 mb-2"><strong class="text-blue-900">Address:</strong> 6827 W Cherry Hills Dr, Peoria, AZ 85345</p>
+                    <p class="text-gray-700 mb-2"><strong class="text-blue-900">Phone:</strong> <a href="tel:+16232029391" class="text-blue-600 hover:underline">+1 623-202-9391</a></p>
+                    <p class="text-gray-700 mb-2"><strong class="text-blue-900">Hours:</strong> Open 24 hours, every day</p>
+                    <p class="text-yellow-600 font-bold text-xl mb-4">Rating: 4.5 stars</p>
+                    <p class="text-gray-700 mb-4"><strong class="text-blue-900">Accessibility:</strong> Wheelchair accessible parking and entrance.</p>
+                    
+                    <h4 class="text-xl font-semibold text-blue-600 mb-3">Customer Testimonials:</h4>
+                    <div class="space-y-3 mb-6">
+                        <blockquote class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-md italic text-gray-700">
+                            "Protege pool service goes above and beyond great service, first time using them I can finally say I finally found great reliable service. Thank you.🤩"
+                        </blockquote>
+                        <blockquote class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-md italic text-gray-700">
+                            "Awesome experience from start to finish. The team was super friendly, knew their stuff, and the pool turned out better than I imagined. Highly recommend!"
+                        </blockquote>
+                    </div>
+                    <a href="https://maps.google.com/?cid=842193448367683889" target="_blank" rel="noopener noreferrer" class="mt-auto self-start bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+                        View on Google Maps
+                    </a>
                 </div>
-                <div class="review-item">
-                    "I would never change companies because Hugo does the best job on our weekly service"
-                </div>
-                <div class="review-item">
-                    "The tech was precise and was able to school me on a couple of things that I did not know."
+
+                <!-- Glendale Location Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Glendale Location</h3>
+                    <p class="text-gray-700 mb-2"><strong class="text-blue-900">Address:</strong> 15415 N 61st Ave, Glendale, AZ 85306</p>
+                    <p class="text-gray-700 mb-2"><strong class="text-blue-900">Phone:</strong> <a href="tel:+16232029391" class="text-blue-600 hover:underline">+1 623-202-9391</a></p>
+                    <p class="text-gray-700 mb-2"><strong class="text-blue-900">Hours:</strong> Open 24 hours Monday - Saturday, Closed Sunday</p>
+                    <p class="text-yellow-600 font-bold text-xl mb-4">Rating: 3.7 stars</p>
+                    <p class="text-gray-700 mb-4"><strong class="text-blue-900">Accessibility:</strong> Wheelchair accessible parking and entrance.</p>
+
+                    <h4 class="text-xl font-semibold text-blue-600 mb-3">Customer Testimonials:</h4>
+                    <div class="space-y-3 mb-6">
+                        <blockquote class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-md italic text-gray-700">
+                            "This company is the only one that kept my pool in great shape all year!"
+                        </blockquote>
+                        <blockquote class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-md italic text-gray-700">
+                            "I would never change companies because Hugo does the best job on our weekly service."
+                        </blockquote>
+                    </div>
+                    <a href="https://maps.google.com/?cid=4400039827755085912" target="_blank" rel="noopener noreferrer" class="mt-auto self-start bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+                        View on Google Maps
+                    </a>
                 </div>
             </div>
-            <p><a href="https://maps.google.com/?cid=4400039827755085912" target="_blank">View on Google Maps</a></p>
-        </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2025 Protege Pool Services. All rights reserved.</p>
-        </footer>
-    </div>
+        <!-- FAQ Section -->
+        <section id="faq" class="mb-16">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-8 border-b-2 border-blue-200 pb-4">Frequently Asked Questions</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                Find quick answers to common questions about our services and what makes Protege Pool Services stand out.
+            </p>
+
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <p class="text-xl font-bold text-blue-800 mb-2">Q: Is Protege Pool Services reliable and consistent?</p>
+                    <p class="text-gray-700 pl-4 border-l-4 border-blue-400">
+                        A: Yes, we are committed to providing reliable and consistent service. Our technicians consistently deliver top-notch care, ensuring your pool remains in perfect condition year-round, without missed visits. We always strive to go above and beyond for every client.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <p class="text-xl font-bold text-blue-800 mb-2">Q: What is the customer service like?</p>
+                    <p class="text-gray-700 pl-4 border-l-4 border-blue-400">
+                        A: Our team is dedicated to providing friendly, professional, and knowledgeable service. We prioritize clear communication and aim for a positive experience for every customer, from your first inquiry to ongoing maintenance.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <p class="text-xl font-bold text-blue-800 mb-2">Q: Are your technicians knowledgeable about pool maintenance and repairs?</p>
+                    <p class="text-gray-700 pl-4 border-l-4 border-blue-400">
+                        A: Absolutely! Our technicians are highly skilled and precise in their work. They possess deep expertise in all aspects of pool care and are happy to share detailed information, helping you understand how to best maintain your pool.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <p class="text-xl font-bold text-blue-800 mb-2">Q: Do you offer weekly pool cleaning services?</p>
+                    <p class="text-gray-700 pl-4 border-l-4 border-blue-400">
+                        A: Yes, weekly pool cleaning is a cornerstone of our services. Our experienced technicians provide excellent care on their weekly routes, ensuring your pool remains pristine and healthy.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <p class="text-xl font-bold text-blue-800 mb-2">Q: Can I trust Protege Pool Services with my pool?</p>
+                    <p class="text-gray-700 pl-4 border-l-4 border-blue-400">
+                        A: We build our reputation on being honest, hardworking, and trustworthy. We treat every client's pool with the utmost care, as if it were our own, ensuring a service you can rely on completely.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-blue-800 text-white rounded-xl shadow-lg p-8 md:p-12 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready for a Sparkling Pool?</h2>
+            <p class="text-xl md:text-2xl font-light mb-8">
+                Reach out to us today for a free quote or to discuss your pool service needs.
+            </p>
+            <div class="space-y-4">
+                <a href="tel:+16232029391" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-xl px-10 py-4 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+                    Call Us Today: +1 623-202-9391
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 px-4 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="mb-4">&copy; 2025 Protege Pool Services. All rights reserved.</p>
+            <p class="text-sm">
+                Serving Peoria, Glendale, and the entire Greater Phoenix Area, Arizona.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
